@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MvpModel</string>
+    <string name="edit_phone">请输入手机号</string>
+    <string name="edit_pwd">请输入密码</string>
+    <string name="btn_reg">注册</string>
+    <string name="btn_login">登录</string>
+</resources>
