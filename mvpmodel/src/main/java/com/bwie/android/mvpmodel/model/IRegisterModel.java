@@ -1,9 +1,9 @@
 package com.bwie.android.mvpmodel.model;
 
-import com.bwie.android.mvpmodel.net.RequestCallback;
+import com.bwie.android.mvpmodel.net.RegisterCallback;
 
 import java.util.HashMap;
 
 public interface IRegisterModel {
-    void login(HashMap<String,String> params, RequestCallback requestCallback);
+    void register(HashMap<String,String> params, RegisterCallback requestCallback);
 }
