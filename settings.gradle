@@ -1,2 +1,2 @@
-include ':app', ':mvpmodel', ':zhangyaozhong1227'
+include ':app', ':mvpmodel', ':zhangyaozhong1227', ':zhangyaozhong1229'
 include ':xListView'

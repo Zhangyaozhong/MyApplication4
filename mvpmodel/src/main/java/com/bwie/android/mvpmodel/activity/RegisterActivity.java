@@ -10,12 +10,12 @@ import android.widget.Toast;
 
 import com.bwie.android.mvpmodel.MainActivity;
 import com.bwie.android.mvpmodel.R;
+import com.bwie.android.mvpmodel.contract.user.IRegContract;
 import com.bwie.android.mvpmodel.presenter.RegPresenter;
-import com.bwie.android.mvpmodel.view.IregisterView;
 
 import java.util.HashMap;
 
-public class RegisterActivity extends AppCompatActivity implements IregisterView {
+public class RegisterActivity extends AppCompatActivity implements IRegContract.IregisterView {
     private EditText etPhone;
     private EditText etPassword;
     private Button btn;

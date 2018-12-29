@@ -25,4 +25,5 @@ public class UserEntity {
     public void setCode(String code) {
         this.code = code;
     }
+
 }

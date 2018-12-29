@@ -1,18 +1,18 @@
 package com.bwie.android.mvpmodel.presenter;
 
+import com.bwie.android.mvpmodel.contract.user.IRegContract;
 import com.bwie.android.mvpmodel.entity.UserEntity;
 import com.bwie.android.mvpmodel.model.RegisterModel;
 import com.bwie.android.mvpmodel.net.RegisterCallback;
 import com.bwie.android.mvpmodel.utils.ValidatorUtil;
-import com.bwie.android.mvpmodel.view.IregisterView;
 
 import java.util.HashMap;
 
-public class RegPresenter  {
+public class RegPresenter  extends IRegContract.RegPresenter {
     private RegisterModel registerModel;
-    private  IregisterView iregisterView;
+    private  IRegContract.IregisterView iregisterView;
 
-    public RegPresenter(IregisterView iregisterView) {
+    public RegPresenter(IRegContract.IregisterView iregisterView) {
         registerModel = new RegisterModel();
         this.iregisterView = iregisterView;
     }
@@ -35,6 +35,11 @@ public class RegPresenter  {
                 }
 
                 @Override
+                public void successMsg(String msg) {
+
+                }
+
+                @Override
                 public void onResponse(String result) {
                     if (iregisterView!=null){
                         iregisterView.success(result);
@@ -44,7 +49,7 @@ public class RegPresenter  {
                 @Override
                 public void error(String msg) {
                     if (iregisterView!=null){
-                        iregisterView.mobileError("手机号不正确");
+                        iregisterView.mobileError(msg);
                     }
                 }
             });
