@@ -1,6 +1,5 @@
 package com.bwie.android.mvpmodel.contract.user;
 
-import com.bwie.android.mvpmodel.entity.UserEntity;
 import com.bwie.android.mvpmodel.net.RegisterCallback;
 
 import java.util.HashMap;
