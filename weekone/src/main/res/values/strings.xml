@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Week one</string>
+    <string name="hint_count">请输入要搜索的商品</string>
+    <string name="search_btn">搜索</string>
 </resources>

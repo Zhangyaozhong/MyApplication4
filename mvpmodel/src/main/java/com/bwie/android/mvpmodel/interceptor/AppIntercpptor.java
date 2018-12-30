@@ -15,7 +15,7 @@ public class AppIntercpptor implements Interceptor {
         Request request = chain.request();
 //得到原来的response对象
         Response response = chain.proceed(request);
-        Log.d("result:", response.body().string());
+
         return response;
     }
 }
